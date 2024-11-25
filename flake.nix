@@ -46,13 +46,7 @@
           '';
         };
       };
-      darwinConfigurations = {
-      ripbook = darwin.lib.darwinSystem {
-      system = "aarch64-darwin";
-        modules = [
-        modules/darwin/home-manager.nix
-        ];
-      };
+
     };
       mkApp = scriptName: system: {
         type = "app";
