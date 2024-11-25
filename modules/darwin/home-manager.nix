@@ -23,7 +23,7 @@ in
     shell = pkgs.zsh;
   };
     # programs.kitty.enable = true;
-  programs.helix.enable = true;
+
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};

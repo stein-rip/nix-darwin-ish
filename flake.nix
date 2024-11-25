@@ -46,8 +46,6 @@
           '';
         };
       };
-
-    };
       mkApp = scriptName: system: {
         type = "app";
         program = "${(nixpkgs.legacyPackages.${system}.writeScriptBin scriptName ''
