@@ -61,30 +61,35 @@ let user = "ssstein"; in
 
     defaults = {
       NSGlobalDomain = {
-        AppleShowAllExtensions = true;
-        ApplePressAndHoldEnabled = false;
+        "AppleShowAllExtensions" = true;
+        "ApplePressAndHoldEnabled" = false;
+        "NSNavPanelExpandedStateForSaveMode" = true;
 
         # 120, 90, 60, 30, 12, 6, 2
         KeyRepeat = 2;
 
         # 120, 94, 68, 35, 25, 15
         InitialKeyRepeat = 15;
-
+        "com.apple.trackpad.trackpadCornerClickBehavior" = 1;
         "com.apple.mouse.tapBehavior" = 1;
         "com.apple.sound.beep.volume" = 0.0;
         "com.apple.sound.beep.feedback" = 0;
       };
 
       dock = {
-        autohide = false;
+        autohide = true;
         show-recents = false;
-        launchanim = true;
-        orientation = "bottom";
-        tilesize = 48;
+        launchanim = false;
+        orientation = "right";
+        tilesize = 28;
+        mru-spaces = false;
+        static-only = true;
       };
 
       finder = {
         _FXShowPosixPathInTitle = false;
+        FXEnableExtensionChangeWarning = false;
+        AppleShowAllFiles = true;
       };
 
       trackpad = {

@@ -31,6 +31,7 @@ let name = "stein-rip";
       export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
       export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
       export PATH=$HOME/.local/share/bin:$PATH
+      /Users/ssstein/.local/state/home-manager/gcroots/current-home/home-files/Applications/Home Manager Apps
 
       # Remove history data we don't want to see
       export HISTIGNORE="pwd:ls:cd"

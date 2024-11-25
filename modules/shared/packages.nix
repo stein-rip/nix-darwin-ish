@@ -16,6 +16,34 @@ with pkgs; [
   sqlite
   wget
   zip
+  whatip
+  hackneyed
+  # postman
+  fortune
+  esphome
+  starfetch
+  ghfetch
+  postman
+
+  # AWS
+  awscli
+  awsls
+  awsume
+  awsbck
+  awslogs
+  aws-mfa
+  aws-gate
+  awsweeper
+  aws-vault
+  aws-sso-cli
+  aws-sam-cli
+
+# Docker
+  docker-client
+  lazydocker
+  dockutil
+  docker
+  docker-compose
 
   # Encryption and security tools
   age
@@ -24,8 +52,7 @@ with pkgs; [
   libfido2
 
   # Cloud-related tools and SDKs
-  docker
-  docker-compose
+
 
   # Media-related packages
   emacs-all-the-icons-fonts
