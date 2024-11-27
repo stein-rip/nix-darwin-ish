@@ -3,9 +3,10 @@
 with pkgs;
 let shared-packages = import ../shared/packages.nix { inherit pkgs; }; in
 shared-packages ++ [
- dockutils
+ dockutil
 # Toys
   pokemon-colorscripts-mac
+  kitty
 
 # Development
   yabai

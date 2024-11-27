@@ -22,8 +22,7 @@ in
     isHidden = false;
     shell = pkgs.zsh;
   };
-    # programs.kitty.enable = true;
-
+  
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
@@ -42,7 +41,7 @@ in
 
     masApps = {
      # "1password" = 1333542190;
-     # "wireguard" = 1451685025;
+     "wireguard" = 1451685025;
     };
   };
 

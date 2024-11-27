@@ -10,7 +10,8 @@ _:
   "pycharm"
   "gitkraken"
   "gitkraken-cli"
-
+  "ipython
+"
   # Communication Tools
   "discord"
   "notion"
@@ -27,7 +28,6 @@ _:
   "wing-personal"
   "lyx"
   "planet"
-  "kitty"
 
   # Entertainment Tools
 

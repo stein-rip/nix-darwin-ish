@@ -18,12 +18,13 @@ with pkgs; [
   zip
   whatip
   hackneyed
-  # postman
+  postman
   fortune
   esphome
   starfetch
   ghfetch
   postman
+  firefox
 
   # AWS
   awscli
@@ -41,15 +42,14 @@ with pkgs; [
 # Docker
   docker-client
   lazydocker
-  dockutil
-  docker
+ # dockutil
   docker-compose
 
   # Encryption and security tools
   age
   age-plugin-yubikey
   gnupg
-  libfido2
+  # libfido2
 
   # Cloud-related tools and SDKs
 
@@ -83,6 +83,7 @@ with pkgs; [
   unrar
   unzip
   zsh-powerlevel10k
+  cachix
 
   # Python packages
   python3

@@ -203,7 +203,7 @@ let name = "stein-rip";
       };
 
       window = {
-        opacity = 1.0;
+        opacity = 0.0;
         padding = {
           x = 24;
           y = 24;

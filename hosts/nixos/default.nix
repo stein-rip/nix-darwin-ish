@@ -27,7 +27,7 @@ let user = "ssstein";
   };
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = "America/Detroit";
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -42,7 +42,7 @@ let user = "ssstein";
     nixPath = [ "nixos-config=/home/${user}/.local/share/src/nixos-config:/etc/nixos" ];
     settings = {
       allowed-users = [ "${user}" ];
-      trusted-users = [ "@admin" "${user}" ];
+      trusted-users = [ "@wheel" "${user}" ];
       substituters = [ "https://nix-community.cachix.org" "https://cache.nixos.org" ];
       trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
     };
@@ -104,7 +104,6 @@ let user = "ssstein";
     # Let's be able to SSH into this machine
     openssh.enable = true;
 
-    # Sync state between machines
     # Sync state between machines
     syncthing = {
       enable = true;
