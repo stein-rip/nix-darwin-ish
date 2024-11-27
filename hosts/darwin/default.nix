@@ -8,7 +8,7 @@ let user = "ssstein"; in
     ../../modules/darwin/secrets.nix
     ../../modules/darwin/home-manager.nix
     ../../modules/shared
-     agenix.darwinModules.default
+    agenix.darwinModules.default
   ];
 
   # Auto upgrade nix package and the daemon service.
@@ -21,6 +21,11 @@ let user = "ssstein"; in
       trusted-users = [ "@admin" "${user}" ];
       substituters = [ "https://nix-community.cachix.org" "https://cache.nixos.org" ];
       trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
+    };
+
+  darwin = {
+    url = "github:LnL7/nix-darwin/master";
+    inputs.nixpkgs.follows = "nixpkgs";
     };
 
     gc = {
